@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" >
+
+<head>
+    <!-- 引入nekohtml，解除html严格语法 -->
+    <meta charset="UTF-8">
+    <title>SpringBoot整合Thymeleaf以及使用webjars管理静态资源</title>
+    <!--
+        如果未引入webjars-locator，相关静态资源需要版本号，此处不便于升级
+        如果引入了webjars-locator，则在路径中把版本号去掉即可
+    -->
+    <script th:src="@{/webjars/jquery/3.3.1/jquery.min.js}"></script>
+    <script th:src="@{/webjars/bootstrap/4.1.3/js/bootstrap.min.js}"></script>
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/4.1.3/css/bootstrap.min.css}"/>
+
+</head>
+<body>
+
+</body>
+</html>
